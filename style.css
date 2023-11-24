@@ -424,7 +424,8 @@ footer {
     padding: 4.5rem 10%;
   }
 
-  .feature-card-section {
+  .feature-card-section,
+  .contact-details {
     gap: 1rem;
   }
 
@@ -448,7 +449,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1024px) {
   .navbar {
     padding: 10px 20px 30px 30px;
   }
@@ -492,7 +493,7 @@ footer {
   }
 
   .hero-content > article > p {
-    font-size: 4vw;
+    font-size: 1.5rem;
   }
 
   .card-img {
@@ -562,6 +563,10 @@ footer {
     padding-left: 0;
   }
 
+  .left-section > h1 {
+    font-size: 3rem;
+  }
+
   .middle-list-section {
     margin-top: 1.25rem;
   }
@@ -589,7 +594,11 @@ footer {
   }
 
   .footer-details {
-    gap: 6rem;
+    gap: 3rem 6rem;
+  }
+
+  .footer-details-item {
+    width: 200px;
   }
 
   .copyright-section > p {
@@ -599,7 +608,7 @@ footer {
 
 /* mobile and small devices  */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .navbar {
     display: flex;
     justify-content: space-between;
