@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 1px solid black; */
 }
 
 /* utility classes */
@@ -37,6 +38,8 @@
 
 /* navbar stylings */
 .navbar {
+  display: block;
+  clear: both;
   padding: 1.5rem 5rem;
   height: 100px;
   min-height: max-content;
@@ -138,7 +141,7 @@
 
 .hero-content > article > p {
   font-size: 1.5vw;
-  font-weight: 10;
+  font-family: var(--font1);
   text-wrap: wrap;
 }
 
@@ -506,7 +509,7 @@ footer {
   }
 
   .card-header:nth-child(2) {
-    padding-inline: 1.25em;
+    padding-inline: 2.25em;
   }
 
   .container-2 {
@@ -604,14 +607,24 @@ footer {
     padding-block: 0.5rem;
   }
 
+  .hero-content > article > h1 {
+    font-size: 2.5rem;
+    margin: 0 0 0.75rem 0;
+  }
+
   .hero-content > article > p {
-    font-size: 1rem;
-    line-height: 1rem;
+    font-size: 0.75rem;
+  }
+
+  .hero-content > article > span {
+    margin-bottom: 1rem;
+    font-size: 0.625rem;
     font-weight: lighter;
+    font-family: var(--font1);
   }
 
   .hero-content > article {
-    padding: 100px 20px;
+    padding: 6rem 1rem;
   }
 
   .hero .hero-content {
@@ -636,7 +649,7 @@ footer {
   }
 
   .card-header:nth-child(2) {
-    padding-inline: 1.5em;
+    padding-inline: 0;
   }
 
   .card-desc,
@@ -653,6 +666,8 @@ footer {
 
   .feature-description {
     font-size: 0.75rem;
+    padding: 0;
+    word-spacing: normal;
   }
 
   .left-section > h1 {
@@ -706,7 +721,7 @@ footer {
   }
 
   ul.features-list > li {
-    margin: 5px auto 5px 2.5rem;
+    margin: 5px auto 5px 1.5rem;
     font-size: 0.75rem;
   }
 
@@ -733,21 +748,25 @@ footer {
     gap: 1rem;
   }
 
+  .contacts-left-section > img {
+    width: 100%;
+  }
+
   .contact-right-section h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .contact-details {
-    font-size: 0.75rem;
+    font-size: 0.625rem;
+  }
+
+  .contact-details-heading {
+    font-size: 0.625rem;
   }
 
   footer {
     padding: 3rem 1rem;
     gap: 3rem;
-  }
-
-  .footer-details {
-    gap: 4rem;
   }
 
   .footer-site-logo img {
@@ -761,5 +780,21 @@ footer {
 
   .footer-icons svg {
     height: 1rem;
+  }
+
+  .copyright-section {
+    padding: 1rem 1rem;
+  }
+  .copyright-section p {
+    font-size: 0.625rem;
+  }
+
+  footer,
+  .footer-details {
+    gap: 0;
+  }
+
+  .footer-details-item {
+    margin: 1rem 1.5rem;
   }
 }
