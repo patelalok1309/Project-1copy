@@ -7,7 +7,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid black; */
 }
 
 /* utility classes */
@@ -38,11 +37,9 @@
 
 /* navbar stylings */
 .navbar {
-  display: block;
-  clear: both;
   padding: 1.5rem 5rem;
   height: 100px;
-  min-height: max-content;
+  min-height: fit-content;
   background-color: #f1eeea;
   justify-content: space-between;
 }
@@ -204,10 +201,6 @@
   font-family: var(--font2);
   text-align: center;
   margin-block: 10px;
-}
-
-.card-header:nth-child(2) {
-  padding-inline: 4em;
 }
 
 .card-desc {
@@ -416,9 +409,42 @@ footer {
 /* breakpoints----------------------------- */
 /* tablet view  */
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
+  .navbar-links > li {
+    font-size: 1.25rem;
+  }
+
   .card {
     width: 30%;
+  }
+  .container-1,
+  .container-2,
+  .container-3,
+  .container-4 {
+    padding: 4.5rem 10%;
+  }
+
+  .feature-card-section {
+    gap: 1rem;
+  }
+
+  .img-description > p,
+  ul.features-list > li,
+  .bottom-para {
+    font-size: 1rem;
+  }
+
+  .left-section > h1 {
+    font-size: 2rem;
+  }
+
+  .right-section > .top-para {
+    font-size: 1.25rem;
+  }
+
+  .middle-list-section > h3,
+  .contact-right-section > h3 {
+    font-size: 1.75rem;
   }
 }
 
@@ -508,8 +534,10 @@ footer {
     font-size: 2rem;
   }
 
-  .card-header:nth-child(2) {
-    padding-inline: 2.25em;
+  .unique-header {
+    /* padding-inline: 2.25em; */
+    word-spacing: 20px;
+    letter-spacing: 1px;
   }
 
   .container-2 {
