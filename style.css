@@ -40,6 +40,14 @@
   padding-inline: 20px;
 }
 
+.bg-white {
+  background-color: #f1eeea;
+}
+
+.bg-green {
+  background-color: #656b50;
+}
+
 /* navbar stylings */
 .navbar {
   padding: 1.5rem 5rem;
@@ -116,7 +124,7 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(1px);
-  padding-block: 20%;
+  padding-block: 10%;
   min-height: min(max-content, max(min-content, stretch));
 }
 
@@ -694,7 +702,7 @@ footer {
   }
 
   .hero-content > article {
-    padding: 6rem 1rem;
+    padding: 6rem 2.5rem;
   }
 
   .hero .hero-content {
